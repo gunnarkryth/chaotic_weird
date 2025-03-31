@@ -1,0 +1,19 @@
+body {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  justify-self: center;
+  background-color: #f0f0f0;
+  main {
+    box-sizing: border-box;
+    width: 75vw;
+    padding: 3vw;
+    margin: 0;
+    background-color: white;
+    min-height: 100vh;
+    box-shadow:0 0 3rem #00000030
+  }
+}

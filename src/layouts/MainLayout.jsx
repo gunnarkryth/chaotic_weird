@@ -1,9 +1,14 @@
-import { Nav } from "../components/header/nav/Nav"
+import { Outlet } from "react-router";
+import { Nav } from "../components/header/nav/Nav";
+import "../styles/MainStyle.scss";
 
 export const MainLayout = () => {
   return (
     <>
-    <Nav/>
+      <main>
+        <Nav />
+        <Outlet />
+      </main>
     </>
-  )
-}
+  );
+};
