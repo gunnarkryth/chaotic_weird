@@ -4,8 +4,10 @@
     display: flex;
     flex-direction: row;
     gap: 1rem;
-    a {
-      text-decoration: none;
+    li {
+      margin: 0;
+      padding: 0;
+      
     }
   }
 }

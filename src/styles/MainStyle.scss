@@ -1,3 +1,15 @@
+@font-face {
+  font-family: "IntelMonoOne";
+  src: url("fonts/IntelOneMono-Regular.ttf") format("truetype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "IntelMonoOne";
+  src: url("fonts/IntelOneMono-Bold.ttf") format("truetype");
+  font-weight: bold;
+}
+
 body {
   box-sizing: border-box;
   display: flex;
@@ -14,6 +26,17 @@ body {
     margin: 0;
     background-color: white;
     min-height: 100vh;
-    box-shadow:0 0 3rem #00000030
+    box-shadow: 0 0 3rem #00000030;
   }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "IntelMonoOne", monospace;
+}
+
+a {
+  all: unset;
+  cursor: pointer;
 }
