@@ -16,6 +16,7 @@ function App() {
             <Route path="campaign/:slug" element={<CampaignDetails />} />
             <Route path="profile/:slug" element={<PersonDetails />} />
             <Route path="/*" element={<PageMissing />} />
+            <Route path="session" element={<PageMissing />} />
             <Route />
           </Route>
         </Routes>
