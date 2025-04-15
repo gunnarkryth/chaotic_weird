@@ -3,7 +3,6 @@ import { useMemo } from "react";
 import { useFetchContentful } from "../../../api/useFetch";
 import { Loading } from "../../loading/Loading";
 import { Link } from "react-router";
-import { Card } from "../../card/Card";
 
 export const Nav = () => {
   const query = useMemo(() => ({ content_type: "campaign" }), []);
@@ -18,7 +17,7 @@ export const Nav = () => {
         {data?.map((campaign) => (
           <li key={campaign.fields.slug}>
             <Link to={`/campaign/${campaign.fields.slug}`}>
-              <Card>{campaign.fields.name}</Card>
+              <p className={s.item}>{campaign.fields.name}</p>
             </Link>
           </li>
         ))}

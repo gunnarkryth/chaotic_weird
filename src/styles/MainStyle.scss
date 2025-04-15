@@ -1,16 +1,8 @@
-@font-face {
-  font-family: "IntelMonoOne";
-  src: url("fonts/IntelOneMono-Regular.ttf") format("truetype");
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "IntelMonoOne";
-  src: url("fonts/IntelOneMono-Bold.ttf") format("truetype");
-  font-weight: bold;
-}
+@import url("https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&display=swap");
 
 body {
+  background-image: url("https://images2.alphacoders.com/131/1314086.jpeg");
+  background-size:cover;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -18,22 +10,28 @@ body {
   margin: 0;
   justify-content: center;
   justify-self: center;
-  background-color: #f0f0f0;
+  // background-color: #f0f0f0;
   main {
     box-sizing: border-box;
     width: 75vw;
     padding: 3vw;
     margin: 0;
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.75);
     min-height: 100vh;
     box-shadow: 0 0 3rem #00000030;
   }
 }
 
 * {
+  color: white;
   margin: 0;
   padding: 0;
-  font-family: "IntelMonoOne", monospace;
+  font-family: "Fondamento", cursive;
+}
+
+h1,h2,h3,h4,h5 {
+  // font-family: "Fondamento", cursive;
+
 }
 
 a {

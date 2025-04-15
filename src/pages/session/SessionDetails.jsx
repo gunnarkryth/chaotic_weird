@@ -2,9 +2,6 @@ import { useMemo } from "react";
 import { useParams } from "react-router";
 import { Loading } from "../../components/loading/Loading";
 import { useFetchContentful } from "../../api/useFetch";
-import { ProfileTag } from "../../components/profile/ProfileTag";
-import { Roster } from "../../components/roster/Roster";
-import { Sessions } from "../../components/sessions/Sessions";
 
 export const SessionDetails = () => {
   const { slug } = useParams();

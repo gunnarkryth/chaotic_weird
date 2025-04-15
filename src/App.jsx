@@ -5,6 +5,7 @@ import { Home } from "./pages/home/Home";
 import { CampaignDetails } from "./pages/campaign/CampaignDetails";
 import { PageMissing } from "./pages/error/PageMissing";
 import { PersonDetails } from "./pages/person/PersonDetails";
+import { SessionDetails } from "./pages/session/SessionDetails";
 
 function App() {
   return (
@@ -15,8 +16,8 @@ function App() {
             <Route index element={<Home />} />
             <Route path="campaign/:slug" element={<CampaignDetails />} />
             <Route path="profile/:slug" element={<PersonDetails />} />
+            <Route path="session/:slug" element={<SessionDetails />} />
             <Route path="/*" element={<PageMissing />} />
-            <Route path="session" element={<PageMissing />} />
             <Route />
           </Route>
         </Routes>
